@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inicio | Energía Solar</title>
+
+  <!-- Bootstrap CSS + Icons (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAVBAR verde limón translúcida -->
+  <nav class="navbar navbar-expand-lg navbar-lime sticky-top">
+    <div class="container">
+      <!-- Logo SVG simple (sol) -->
+      <img class="navbar-brand-logo" src="data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000'%3E%3Ccircle cx='12' cy='12' r='4' fill='%23FFCC00'/%3E%3Cpath d='M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12' stroke='%23FFCC00' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E" alt="Sol">
+      <a class="navbar-brand fw-bold" href="index.html">Energía Solar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="informacion.html">Información</a></li>
+          <li class="nav-item"><a class="nav-link" href="calculadora.html">Calculadora</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="datos.html">Datos</a></li>
+          <li class="nav-item"><a class="nav-link" href="docs.html">Docs</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+          <li class="nav-item"><a class="nav-link" href="http://localhost:8501" target="_blank" rel="noopener">Dashboard</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-solar py-5">
+    <div class="container text-center">
+      <h1 class="fw-bold">Impulsa tu hogar con Energía Solar</h1>
+      <p class="lead mb-4">Soluciones fotovoltaicas confiables, ahorro real y soporte experto en Colombia.</p>
+      <a href="calculadora.html" class="btn btn-solar btn-lg">Calcular mi ahorro</a>
+    </div>
+  </header>
+
+  <!-- ===========================
+     Sección: Accede al Dashboard
+     =========================== -->
+<section class="py-5">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <!-- Texto / descripción -->
+      <div class="col-lg-7">
+        <h2 class="mb-3">Dashboard de Energía Solar</h2>
+        <p class="lead mb-3">
+          Visualiza tus <strong>KPI energéticos</strong> (promedio, máximos y tendencia),
+          simula el <strong>tamaño del sistema fotovoltaico</strong> según HSP y Wp, y
+          estima tu <strong>ahorro mensual</strong> con cobertura objetivo.
+        </p>
+        <ul class="mb-4">
+          <li>Gráficos de consumo mensual con <em>media móvil</em>.</li>
+          <li>Estimación de <strong>paneles requeridos</strong> y <strong>potencia (kWp)</strong>.</li>
+          <li>Exporta datos y ajusta parámetros en tiempo real.</li>
+        </ul>
+
+        <!-- CTA: Botón grande con efectos -->
+        <a href="http://localhost:8501" target="_blank" rel="noopener"
+           class="btn btn-solar btn-cta-glow btn-lg px-4"
+           aria-label="Abrir Dashboard de Energía Solar en una nueva pestaña">
+          <span class="btn-shine">Abrir Dashboard</span>
+          <i class="bi bi-arrow-up-right ms-2"></i>
+        </a>
+
+
+      </div>
+
+      <!-- Tarjeta con “qué incluye” (refuerzo visual) -->
+      <div class="col-lg-5">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              <div class="rounded-circle me-3 d-inline-flex align-items-center justify-content-center"
+                   style="width:46px;height:46px;background:rgba(163,217,0,.15)">
+                <i class="bi bi-bar-chart-fill fs-4" style="color:#A3D900"></i>
+              </div>
+              <h5 class="card-title mb-0">¿Qué verás en el dashboard?</h5>
+            </div>
+            <p class="mb-3 text-muted">Todo alineado con lo visto en clase (Pandas, NumPy, Matplotlib/Seaborn y Streamlit).</p>
+            <div class="row g-2">
+              <div class="col-6">
+                <div class="p-3 rounded border h-100">
+                  <div class="fw-semibold">KPI</div>
+                  <div class="small text-muted">Promedio · Máximo · Mínimo · Tendencia</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="p-3 rounded border h-100">
+                  <div class="fw-semibold">Simulador</div>
+                  <div class="small text-muted">HSP · Wp · kWh/panel · kWp</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="p-3 rounded border h-100">
+                  <div class="fw-semibold">Ahorro</div>
+                  <div class="small text-muted">Cobertura (%) y $/kWh para estimar tu ahorro mensual</div>
+                </div>
+              </div>
+            </div>
+            <div class="alert alert-warning mt-3 mb-0 py-2">
+              <i class="bi bi-lightning-charge-fill me-1"></i>
+              Consejo: usa valores conservadores de HSP de tu ciudad.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--/row-->
+  </div><!--/container-->
+</section>
+
+  <!-- Cinta de marcas (10 logos) -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Empresas que confían en nosotros</h2>
+      <div class="brands-strip">
+        <div class="brands-track">
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_Telefonica_Movistar.svg" alt="Movistar"></div>
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Bancolombia_logo.svg" alt="Bancolombia"></div>
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_Grupo_Nutresa.svg" alt="Nutresa"></div>
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Alpina_logo.svg" alt="Alpina"></div>
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Postobon_logo.svg" alt="Postobón"></div>
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Ecopetrol.svg" alt="Ecopetrol"></div>
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Avianca_Logo.svg" alt="Avianca"></div>
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Grupo_Exito_logo.svg" alt="Éxito"></div>
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Cementos_Argos_logo.svg" alt="Argos"></div>
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Logo_Tigo_Colombia.svg" alt="Tigo"></div>
+          <!-- duplicados para scroll continuo -->
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_Telefonica_Movistar.svg" alt="Movistar"></div>
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Bancolombia_logo.svg" alt="Bancolombia"></div>
+          <div class="brands-item"><img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_Grupo_Nutresa.svg" alt="Nutresa"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiénes somos / valores / certificaciones -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="mb-3">¿Quiénes somos?</h2>
+          <p>Somos una compañía enfocada en soluciones fotovoltaicas residenciales y comerciales. Diseñamos, instalamos y mantenemos sistemas solares con altos estándares de calidad y seguridad.</p>
+          <ul>
+            <li>+500 instalaciones en 15 departamentos de Colombia</li>
+            <li>Ingeniería certificada y soporte posventa</li>
+            <li>Acompañamiento en trámites y beneficios tributarios</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="mb-3">Nuestros valores</h3>
+          <div class="row g-3">
+            <div class="col-6"><div class="card p-3"><strong>Sostenibilidad</strong><p class="mb-0">Cuidamos el entorno en cada proyecto.</p></div></div>
+            <div class="col-6"><div class="card p-3"><strong>Transparencia</strong><p class="mb-0">Presupuestos claros y realistas.</p></div></div>
+            <div class="col-6"><div class="card p-3"><strong>Seguridad</strong><p class="mb-0">Cumplimiento de normas RETIE.</p></div></div>
+            <div class="col-6"><div class="card p-3"><strong>Innovación</strong><p class="mb-0">Tecnología de última generación.</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5">
+      <h3 class="mb-3">Certificaciones (ejemplo)</h3>
+      <div class="row g-3">
+        <div class="col-md-4"><div class="card p-3"><strong>RETIE Instalador</strong><p class="mb-0">Cumplimiento reglamentario colombiano.</p></div></div>
+        <div class="col-md-4"><div class="card p-3"><strong>ISO 9001</strong><p class="mb-0">Gestión de calidad en procesos.</p></div></div>
+        <div class="col-md-4"><div class="card p-3"><strong>Proveedor Tier-1</strong><p class="mb-0">Módulos y equipos de fabricantes líderes.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (redes y dirección) -->
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-4 text-center text-md-start">
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+            <img class="me-2" width="28" src="data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000'%3E%3Ccircle cx='12' cy='12' r='4' fill='%23FFCC00'/%3E%3Cpath d='M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12' stroke='%23FFCC00' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E" alt="">
+            <span>© 2025 Energía Solar — Todos los derechos reservados</span>
+          </div>
+        </div>
+        <div class="col-md-4 text-center"><i class="bi bi-geo-alt-fill me-1"></i> Medellín, Colombia</div>
+        <div class="col-md-4 text-center text-md-end">
+          <a class="me-3" href="#"><i class="bi bi-instagram"></i></a>
+          <a class="me-3" href="#"><i class="bi bi-facebook"></i></a>
+          <a class="me-3" href="#"><i class="bi bi-twitter-x"></i></a>
+          <a class="me-3" href="#"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

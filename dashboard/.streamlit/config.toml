@@ -1,0 +1,7 @@
+# Tema consistente con la web (botón amarillo, fondos claros, texto oscuro)
+[theme]
+primaryColor = "#FFCC00"          # Amarillo solar (CTAs)
+backgroundColor = "#F8F9FA"       # Fondo claro
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#222222"
+font = "sans serif"
