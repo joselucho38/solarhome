@@ -1,0 +1,15 @@
+# Archivos de sistema/IDE
+.DS_Store
+Thumbs.db
+*.log
+
+# Entorno/venv
+venv/
+.env
+
+# Node/Build
+node_modules/
+dist/
+
+# OneDrive temporales
+~
