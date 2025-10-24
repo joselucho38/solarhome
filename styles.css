@@ -84,6 +84,17 @@ body{
 .site-footer{ background:#111; color:#bbb; }
 .site-footer a{ color:#bbb; text-decoration:none; }
 .site-footer a:hover{ color:#fff; text-decoration:underline; }
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #090909; /* o el color que uses */
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
 
 /* -------- Tabla de contacto -------- */
 .table-contact th{ background: #fafafa; }
